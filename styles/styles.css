@@ -119,16 +119,17 @@
 .personaAprendiendo{
     text-align: center;
     margin-top: 5rem;
+    width: 100%;
 }
-.personaAprendiendo img{
-    width: 50rem;
+.imgAprendiendo  img{
+    max-width: 40rem;
     border-radius: 20px;
 }
 .inscripcion{
     position: absolute;
     color: #000;
   
-    margin: 40px -530px 0 0;
+    margin: 40px -350px 0 0;
 
 }
 .inscHeader{
@@ -162,7 +163,8 @@
     border: 1px solid black;
     border-radius: 10px;
     margin: 20px;
-    width: 100%;
+    width: 250px;
+    height: 150px;
     padding: 5px;
     display: flex;
    align-items: center;
@@ -204,6 +206,7 @@
     align-items: center;
 }
 .infoCards{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -238,7 +241,9 @@ a{
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 
 }
-
+.moreInfo{
+    width: 100%;
+}
 .moreInfo button{
     margin-top: 30px;
     width: 45%;
@@ -258,7 +263,7 @@ a{
     align-items: center;
     justify-content: space-evenly;
     border: 1px solid #000;
-    width: 530px;
+    max-width: 530px;
     height: 150px;
     margin: 30px 20px 0 20px;
     border-radius: 20px;
@@ -296,12 +301,134 @@ footer{
     font-size: 20px;
 
 }
-@media (max-width:990px){
+@media (max-width:971px){
+
+}
+@media (max-width:1007px){
+    .moreInfo button{
+        width: 85%;
+        height: 5rem;
+
+        font-size: 18px;
+  
+    }
+}
+@media (max-width:991px){
+    .logo h1{
+        display: none;
+    }
     .navbar-nav{
         text-align: center;
     }
     .navbar-nav  span{
         display: none;
     }
+    .container-fluid{
+        width: 100%;
+    }
+    .container-fluid .navbar-brand{
+        width: 10%;
+    }
+    .container-fluid .icon{
+        width: 60%;
+        font-size: 20px;
+        color: #fff;
+        margin-right: -60px;
+    }
+    .icon i{
+        float: right;
+    }
+    .container-fluid .navbar-toggler{
+        width: 10%;
+    }
+   
+}
+@media (max-width:982px){
+   
+    .navbar-collapse{
+        position: relative;
+        z-index: 999;
+        background-color: #454545;
+    }
+    .inscripcion{
+        margin: 40px -350px 0 0;    
+     }
+     .moreInfo button{
+         width: 85%;
+         height: 5rem;
+ 
+         font-size: 18px;
+   
+     }
+     .tutoriales .tutos{
+         height: 50px;
+         padding: 3px;
+         margin: 0 5rem 0  5rem;
+         font-size: 16px;
+     }
+  
+}
+@media (max-width:748px){
+    .inscripcion{
+       margin: 40px -350px 0 0;    
+    }
+    .moreInfo button{
+        width: 85%;
+        height: 5rem;
 
+        font-size: 18px;
+  
+    }
+    .tutoriales .tutos{
+        height: 50px;
+        padding: 3px;
+        margin: 0 5rem 0  5rem;
+        font-size: 16px;
+    }
+
+}
+@media (max-width:663px){
+    .carousel-caption h5{
+        font-size: 4rem;
+        color: #fff;
+    }
+    .imgAprendiendo{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    .imgAprendiendo img{
+        width: 33rem;
+    }
+    .inscripcion{
+        margin: 40px -250px 0 0;    
+     }
+     .tutoriales{
+        width: 100%;
+     }
+     .tutoriales .tutos{
+        width: 100%;
+        height: 50px;
+       margin: 0  10px  10px;
+        font-size:16px;
+    }
+    .curso{
+        width: 100%;
+    }
+    .tarjetaCursos{
+        margin: 10px;
+        height: 150px;
+    }
+}
+@media (max-width:520px){
+    .carousel-caption h5{
+        font-size: 3rem;
+        color: #fff;
+    }
+    .imgAprendiendo img{
+        width: 25rem;
+    }
+    .inscripcion{
+        margin: 40px -140px 0 0;    
+     }
 }
