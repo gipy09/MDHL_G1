@@ -301,6 +301,9 @@ footer{
     font-size: 20px;
 
 }
+.container-fluid .icon{
+    display: none;
+}
 @media (max-width:971px){
 
 }
@@ -330,6 +333,7 @@ footer{
         width: 10%;
     }
     .container-fluid .icon{
+        display: block;
         width: 60%;
         font-size: 20px;
         color: #fff;
